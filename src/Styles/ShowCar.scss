@@ -1,0 +1,28 @@
+.CarShowMain{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    row-gap: 10vw;
+    justify-content: space-evenly;
+    align-items: center ;
+    align-content:space-around ;
+    .LinkCarShow{
+        text-decoration: none;
+    }
+
+    div{
+        text-align: center;
+        text-shadow: .1vw .1vw rgb(79, 245, 148);
+        text-decoration: none;
+        color:darkcyan;
+        width: fit-content;
+        padding: 2vw;
+        font-size: 2vw;
+        border:1.5vw solid transparent;
+        background-color: lightblue;
+        border-image: repeating-linear-gradient(125deg,pink, blue 3%, rgb(178, 32, 171) ,rgb(230, 173, 201) 10%,blue 8%,
+        yellow 8%)10;
+    }
+}

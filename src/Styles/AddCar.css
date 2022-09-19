@@ -1,0 +1,467 @@
+#addCarDiv {
+  position: relative;
+  top: 2vw;
+  gap: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  margin: auto;
+  padding: 1vw;
+  border: 1.5vw solid transparent;
+  -o-border-image: repeating-linear-gradient(125deg, #1676cf, #1a039c 3%, #19a5cf, #0fb340 10%, #a5c70c 8%, #ee9f0e 8%) 10;
+     border-image: repeating-linear-gradient(125deg, #1676cf, #1a039c 3%, #19a5cf, #0fb340 10%, #a5c70c 8%, #ee9f0e 8%) 10;
+}
+
+#addCarDiv h1 {
+  color: transparent;
+  background: linear-gradient(110deg, #da12bf, #1002d4);
+  background-clip: text;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#addCarDiv input[type="text"] {
+  width: 20vw;
+  text-align: center;
+  font-size: 2vw;
+  color: blue;
+}
+
+#addCarDiv input[type="text"]::-webkit-input-placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#addCarDiv input[type="text"]:-ms-input-placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#addCarDiv input[type="text"]::-ms-input-placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#addCarDiv input[type="text"]::placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#buttonAdd {
+  border-radius: 10%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  background: linear-gradient(50deg, #53f57c, #17ecda);
+  -webkit-transition: 5s;
+  transition: 5s;
+  font-size: 2vw;
+  padding: 1vw;
+}
+
+#buttonAdd div {
+  -webkit-transition: 5s;
+  transition: 5s;
+  -webkit-animation: changeColor2 5s infinite;
+          animation: changeColor2 5s infinite;
+}
+
+#buttonAdd:hover {
+  -webkit-box-shadow: 0 0vw 0.3vw 0.5vw #07daff;
+          box-shadow: 0 0vw 0.3vw 0.5vw #07daff;
+  -webkit-transform: perspective(1000vw) translateZ(200vw);
+          transform: perspective(1000vw) translateZ(200vw);
+  height: 10vw;
+  width: 10vw;
+  background-size: auto;
+  background: url("../Img/add.gif") no-repeat scroll;
+  background-position: center;
+  background-color: lightblue;
+  margin-bottom: 2vw;
+}
+
+#buttonAdd:hover div {
+  -webkit-transform: translateY(7vw);
+          transform: translateY(7vw);
+  background-color: #07daff;
+}
+
+@-webkit-keyframes changeColor2 {
+  from {
+    color: #a89d02;
+  }
+  to {
+    color: #2711eb;
+  }
+}
+
+@keyframes changeColor2 {
+  from {
+    color: #a89d02;
+  }
+  to {
+    color: #2711eb;
+  }
+}
+
+#toggleCar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toggleCar label {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  bottom: 1vw;
+  margin: .5vw;
+  width: 6vw;
+  height: 2.5vw;
+}
+
+#toggleCar label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#toggleCar label input:checked + span {
+  background-color: #2196F3;
+}
+
+#toggleCar label input:checked + span::before {
+  -webkit-transform: translateX(2.2vw);
+          transform: translateX(2.2vw);
+}
+
+#toggleCar label input:focus + span {
+  -webkit-box-shadow: 0 0 1px #1fc580;
+          box-shadow: 0 0 1px #1fc580;
+}
+
+#toggleCar label span {
+  position: absolute;
+  cursor: url("../Cursor/click.gif"), auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: lightseagreen;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 2vw;
+}
+
+#toggleCar label span::before {
+  position: absolute;
+  content: "";
+  height: 2vw;
+  width: 2vw;
+  left: 1vw;
+  bottom: .2vw;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 10vw;
+}
+
+#toggleCar span {
+  font-size: 2vw;
+  font-weight: bolder;
+  padding: .5vw;
+}
+
+#optionTurnOn {
+  color: blue;
+  text-shadow: 0 -1px 4px blue, 0 -2px 10px yellow, 0 -10px 20px orange, 0 -18px 40px red;
+}
+
+#optionTurnOff {
+  color: rgba(44, 3, 34, 0.6);
+  text-shadow: 3px 2px 3px rgba(126, 13, 126, 0.541);
+}
+
+.divOptions {
+  padding: 2vw;
+  border: 1.5vw groove #ebeb5f;
+}
+
+#option1 {
+  display: inline-block;
+}
+
+#option2 {
+  display: none;
+}
+
+.Description {
+  font-size: 2vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: transparent;
+  background: linear-gradient(30deg, #f60909, #ff7c12);
+  background-clip: text;
+}
+
+.DescriptionOpt {
+  font-size: 2vw;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: transparent;
+  background: linear-gradient(30deg, #07fa07, #ee0a0a);
+  background-clip: text;
+}
+
+.myRadios {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.customRadio {
+  display: block;
+  position: relative;
+  padding-left: 3vw;
+  margin-bottom: .5vw;
+  cursor: url("../Cursor/noEnter.gif"), auto;
+  font-size: 2vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: .2vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.customRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: url("../Cursor/click.gif"), auto;
+  height: 0;
+  width: 0;
+}
+
+.customRadio span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2vw;
+  width: 2vw;
+  background-color: #e0d09b;
+  border-radius: 50%;
+}
+
+.customRadio:hover input ~ span {
+  background-color: #10a7ff;
+}
+
+.customRadio input:checked ~ span {
+  background-color: #44efff;
+}
+
+.customRadio span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customRadio input:checked ~ span:after {
+  display: block;
+}
+
+.customRadio span:after {
+  left: .4vw;
+  top: .4vw;
+  width: 1.3vw;
+  height: 1.3vw;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(yellow));
+  background: linear-gradient(to bottom, red, yellow);
+}
+
+#CatalogCars {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2vw;
+  background-color: greend;
+}
+
+#CatalogCars button {
+  border-color: cyan;
+  border-radius: 18%;
+  font-size: 2.5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  font-family: fontAwesome;
+}
+
+#CatalogCars button:hover {
+  -webkit-box-shadow: 0 0vw .3vw .5vw cornflowerblue;
+          box-shadow: 0 0vw .3vw .5vw cornflowerblue;
+}
+
+#CatalogCars button i {
+  display: inline-block;
+  left: -.5vw;
+  bottom: -.4vw;
+  -webkit-transform: translateX(-0.5vw) translateY(0.4vw);
+          transform: translateX(-0.5vw) translateY(0.4vw);
+}
+
+#CatalogCars i {
+  font-size: 2.5vw;
+}
+
+#CatalogCars img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vw;
+  width: 15vw;
+  height: 15vw;
+  border: 1.5vw solid transparent;
+  -o-border-image: repeating-linear-gradient(125deg, #279db0, #15fdfd 3%, #0105f8 3%, #c309f1 15%) 10;
+     border-image: repeating-linear-gradient(125deg, #279db0, #15fdfd 3%, #0105f8 3%, #c309f1 15%) 10;
+}
+
+#CatalogCars :not(:first-child):not(:last-child) {
+  display: none;
+}
+
+#btn_Slide_Left {
+  bottom: 7vw;
+  margin-left: 14vw;
+  -webkit-transform: rotate(180deg) translateY(7vw) translateX(-1vw);
+          transform: rotate(180deg) translateY(7vw) translateX(-1vw);
+}
+
+#btn_Slide_Right {
+  left: 18vw;
+  bottom: 7vw;
+  -webkit-transform: translateY(-7vw) translateX(18vw);
+          transform: translateY(-7vw) translateX(18vw);
+}
+
+#btn_Slide_LeftWithRight {
+  top: -5.6vw;
+  right: -11.3vw;
+  -webkit-transform: rotate(180deg) translateY(5.6vw) translateX(-11.3vw);
+          transform: rotate(180deg) translateY(5.6vw) translateX(-11.3vw);
+}
+
+#btn_Slide_RightWithLeft {
+  bottom: 7.3vw;
+  left: 23.2vw;
+  -webkit-transform: translateY(-7.3vw) translateX(23.2vw);
+          transform: translateY(-7.3vw) translateX(23.2vw);
+}
+
+.mySlideTitle {
+  background: linear-gradient(12deg, #e9ff14, #2f5aed);
+  color: #8be0e8;
+  font-size: 2vw;
+  font-family: fontAwesome;
+  font-weight: bolder;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1vw;
+}
+
+.SlideTitleLeft {
+  margin: 0 20vw;
+  margin-bottom: -2.5vw;
+}
+
+.SlideTitleRight {
+  margin: 0 30vw;
+  margin-bottom: -2.5vw;
+}
+
+.SlideTitleCenter {
+  width: 20vw;
+  margin: 0 25.5vw;
+  margin-bottom: -6vw;
+}
+
+#CountriesCars dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3vw;
+  list-style: none;
+}
+
+#CountriesCars dl dt {
+  font-size: 1.4vw;
+  font-weight: bolder;
+  color: #eadd2a;
+  text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#CountriesCars dl dt::before {
+  content: '';
+  display: inline-block;
+  height: 8vw;
+  width: 8vw;
+  margin-right: 3vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../Img/List.gif");
+  background-size: 8vw 8vw;
+}
+
+#CountriesCars dl dd {
+  font-size: 1.2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+
+#CountriesCars dl dd:hover {
+  background-color: #f3ec87;
+}
+/*# sourceMappingURL=AddCar.css.map */

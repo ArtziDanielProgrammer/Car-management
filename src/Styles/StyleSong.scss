@@ -1,0 +1,19 @@
+.divSound{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5vw;
+    margin-bottom: 1vw;
+    *{
+        width:10vw;
+        height: 5vw;
+        font-size: 1.5vw;
+        background-color: lightskyblue;
+        color: yellow;
+    }
+
+    *:disabled{
+        background-color: lightgray;
+        cursor: not-allowed;
+    }
+}
+

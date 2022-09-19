@@ -1,0 +1,21 @@
+body{
+  background-image: url('./Img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  cursor: url("./Cursor/move.gif") ,auto;
+}
+
+button:hover{
+  cursor: url("./Cursor/click.gif") ,auto;
+}
+
+.Links:hover{
+  cursor: url("./Cursor/click.gif") ,auto;
+}
+
+input[type="text"]:hover
+{
+    cursor: url("./Cursor/noEnter.gif") ,auto;
+}

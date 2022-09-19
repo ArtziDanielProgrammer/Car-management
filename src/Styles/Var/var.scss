@@ -1,0 +1,12 @@
+@mixin myAnims ($name,$fromAttribute, $fromValue, $toAttribute, $toValue) {
+    @keyframes #{$name} {
+        from{
+        #{$fromAttribute}:#{$fromValue};
+        }
+
+        to{
+        #{$toAttribute}:#{$toValue};
+        }
+    }
+    
+}

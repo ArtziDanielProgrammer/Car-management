@@ -1,0 +1,43 @@
+.CarShowMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 5vw;
+          column-gap: 5vw;
+  row-gap: 10vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.CarShowMain .LinkCarShow {
+  text-decoration: none;
+}
+
+.CarShowMain div {
+  text-align: center;
+  text-shadow: 0.1vw 0.1vw #4ff594;
+  text-decoration: none;
+  color: darkcyan;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2vw;
+  font-size: 2vw;
+  border: 1.5vw solid transparent;
+  background-color: lightblue;
+  -o-border-image: repeating-linear-gradient(125deg, pink, blue 3%, #b220ab, #e6adc9 10%, blue 8%, yellow 8%) 10;
+     border-image: repeating-linear-gradient(125deg, pink, blue 3%, #b220ab, #e6adc9 10%, blue 8%, yellow 8%) 10;
+}
+/*# sourceMappingURL=ShowCar.css.map */
