@@ -1,0 +1,109 @@
+@import './Var/var.scss';
+
+
+.ActionBar{
+    border:2vw groove blue;
+}
+
+#actionTop{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin:auto;
+    justify-content: space-evenly;
+    align-items: center ;
+    align-content:space-around ;
+    gap: 3vw;
+
+    *{
+        gap: 3vw;
+    }
+
+    button{
+        font-size: 2vw;
+        background-color: lighten(blue, 30);
+        animation: changeColorDarken 3s infinite;
+        border-radius: 30px;
+        padding: 1vw;
+        &:hover{
+            background-color: aqua;
+        }
+
+        &:active{
+            background-color: navajowhite !important;
+        }
+    
+    }
+}
+
+#actionBottom{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin:auto;
+    justify-content: space-evenly;
+    align-items: center ;
+    align-content:space-around ;
+    gap: 3vw;
+
+    *{
+        gap: 3vw;
+    }
+
+    button{
+        font-size: 2vw;
+        background-color: lighten(blue, 30);
+        animation: changeColorDarken 3s infinite;
+        border-radius: 30px;
+        &:hover{
+            background-color: aqua;
+        }
+
+        &:active{
+            background-color: navajowhite !important;
+        }
+    
+    }
+
+    input[type="text"]
+    {
+        width:20vw;
+        text-align: center;
+        font-size: 2vw;
+        color:blue
+    }
+
+    input[type="text"]::placeholder
+    {
+        color:darkgoldenrod;
+        background-color: bisque;
+    }
+
+    input[type="text"]:hover
+    {
+        cursor: url("../Cursor/noEnter.gif") ,auto;
+    }
+}
+
+
+@keyframes changeColorDarken {
+    0%{
+        color:darken(rgb(126, 215, 245), 30);
+    }
+    20%{
+        color:darken(rgb(126, 215, 245), 35);
+    }
+    40%{
+        color:darken(rgb(126, 215, 245), 38);
+    }
+    60%{
+        color:darken(rgb(126, 215, 245), 40);
+    }
+    80%{
+        color:darken(rgb(126, 215, 245), 50);
+    }
+    100%{
+        color:darken(rgb(126, 215, 245), 60);
+    }
+}
+

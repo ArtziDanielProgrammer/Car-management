@@ -1,0 +1,160 @@
+.ActionBar {
+  border: 2vw groove blue;
+}
+
+#actionTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  gap: 3vw;
+}
+
+#actionTop * {
+  gap: 3vw;
+}
+
+#actionTop button {
+  font-size: 2vw;
+  background-color: #9999ff;
+  -webkit-animation: changeColorDarken 3s infinite;
+          animation: changeColorDarken 3s infinite;
+  border-radius: 30px;
+  padding: 1vw;
+}
+
+#actionTop button:hover {
+  background-color: aqua;
+}
+
+#actionTop button:active {
+  background-color: navajowhite !important;
+}
+
+#actionBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  gap: 3vw;
+}
+
+#actionBottom * {
+  gap: 3vw;
+}
+
+#actionBottom button {
+  font-size: 2vw;
+  background-color: #9999ff;
+  -webkit-animation: changeColorDarken 3s infinite;
+          animation: changeColorDarken 3s infinite;
+  border-radius: 30px;
+}
+
+#actionBottom button:hover {
+  background-color: aqua;
+}
+
+#actionBottom button:active {
+  background-color: navajowhite !important;
+}
+
+#actionBottom input[type="text"] {
+  width: 20vw;
+  text-align: center;
+  font-size: 2vw;
+  color: blue;
+}
+
+#actionBottom input[type="text"]::-webkit-input-placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#actionBottom input[type="text"]:-ms-input-placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#actionBottom input[type="text"]::-ms-input-placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#actionBottom input[type="text"]::placeholder {
+  color: darkgoldenrod;
+  background-color: bisque;
+}
+
+#actionBottom input[type="text"]:hover {
+  cursor: url("../Cursor/noEnter.gif"), auto;
+}
+
+@-webkit-keyframes changeColorDarken {
+  0% {
+    color: #109bca;
+  }
+  20% {
+    color: #0e89b3;
+  }
+  40% {
+    color: #0d7ea4;
+  }
+  60% {
+    color: #0c779b;
+  }
+  80% {
+    color: #08536c;
+  }
+  100% {
+    color: #052e3c;
+  }
+}
+
+@keyframes changeColorDarken {
+  0% {
+    color: #109bca;
+  }
+  20% {
+    color: #0e89b3;
+  }
+  40% {
+    color: #0d7ea4;
+  }
+  60% {
+    color: #0c779b;
+  }
+  80% {
+    color: #08536c;
+  }
+  100% {
+    color: #052e3c;
+  }
+}
+/*# sourceMappingURL=Main.css.map */
